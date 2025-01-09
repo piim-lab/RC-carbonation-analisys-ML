@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #1852a8;
+    background-color: #276cd3;
 }
 
 main{
@@ -36,6 +36,31 @@ section.main-content{
         article.resume{
             padding: 0px 10px;
             background-color: #ffffff80;
+            border-radius: 10px;
+        }
+    }
+}
+
+section.main-info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    section{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px;
+        margin: 0px 10px;
+        flex-grow: 1;
+        max-width: 500px;
+        background-color: #ffffff80;
+        border-radius: 10px;
+
+        h1{
+            font-size: 1.5rem;
+            text-align: center;
+            border-bottom: #000000 solid 0.3rem;
+            margin-bottom: 5px;
         }
     }
 }
