@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #124ea8;
+}
+
+main{
+    max-width: 1440px;
+    flex-flow: column wrap;
+    display: flex;
+    justify-self: center;
+}
+
+section.main-content{
+    display: flex;
+    flex-flow: row wrap;
+
+    section.introduction{
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 1000px;
+        
+        h1{
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 10px auto;
+            background-color: #ffffff80;
+            width: 100%;
+            border-bottom: #000000 solid 0.3rem;
+        }
+        
+        article.resume{
+            padding: 0px 10px;
+            background-color: #ffffff80;
+        }
+    }
+}
