@@ -7,6 +7,7 @@
 :root {
     --background: #276cd3;
     --primary: #f9fbfd92;
+    --border: #724a00;
   }
 
 body{
@@ -15,9 +16,12 @@ body{
 
 main{
     max-width: 1440px;
+    min-height: 100vh; 
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     justify-self: center;
+    background-color: var(--primary);
 }
 
 section.main-content{
@@ -26,28 +30,28 @@ section.main-content{
     justify-content: space-around;
     gap: 10px;
     margin: 10px 0px;
+    padding: 0px 10px;
 
     section.introduction{
         display: flex;
         flex-flow: column wrap;
         flex-grow: 1;
+        max-width: 800px;
         
         h1{
             font-size: 1.5rem;
             text-align: center;
             margin: 0px auto 10px auto;
-            background-color: var(--primary);
             width: 100%;
             border-bottom: #000000 solid 0.3rem;
         }
         
         article.resume{
             padding: 0px 10px;
-            background-color: var(--primary);
             border-radius: 10px;
-            text-align: justify;
             gap: 10px;
             p{
+                text-align: justify;
                 margin-bottom: 10px;
             }
         }
@@ -55,12 +59,11 @@ section.main-content{
 
     section.researchers{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         gap: 10px; 
         min-width: 200px;
-        max-width: 350px;
-        flex-grow: 0.9;
-        background-color: var(--primary);
+        max-width: 100%;
+        flex-grow: 1;
 
         h1{
             font-size: 1.5rem;
@@ -95,6 +98,7 @@ section.main-info{
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 10px;
+    margin: 0px 10px;
 
     section{
         display: flex;
@@ -102,8 +106,8 @@ section.main-info{
         padding: 10px;
         flex-grow: 1;
         max-width: 400px;
-        background-color: var(--primary);
         border-radius: 10px;
+        border: var(--border) solid 0.1rem;
 
         h1{
             font-size: 1.5rem;
@@ -114,12 +118,8 @@ section.main-info{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     section.main-content{
         flex-flow: row wrap;
     }
-    section.researchers{
-        max-width: 500px;
-        width: 100%;
-    }
-  }
+}
