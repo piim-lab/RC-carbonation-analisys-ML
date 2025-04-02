@@ -39,7 +39,7 @@ h1 {
 }
 
 h1.title{
-  border-bottom: 2px solid var(--border1);
+  border-bottom: 2px solid var(--border-color);
 }
 
 section.introduction, 
